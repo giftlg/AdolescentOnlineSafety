@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
   //check if email is entered
       if (TextUtils.isEmpty(reg_email))
       {
-          Toast.makeText(MainActivity.this,"email is empty",Toast.LENGTH_LONG).show();
+          Toast.makeText(MainActivity.this,"Email is empty",Toast.LENGTH_LONG).show();
 
       }
       else
@@ -71,15 +71,10 @@ public class MainActivity extends AppCompatActivity {
               Toast.makeText(MainActivity.this, "Email "+reg_email+" registered", Toast.LENGTH_SHORT).show();
               Intent intent = new Intent(MainActivity.this,LoggedInActivity.class);
               startActivity(intent);
-
-
           }
 
         }
     });
-
-
-
 
     }
 
@@ -102,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
                 shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Adolescent Online Safety app");
-                String shareMessage= "\nLet me recommend you this application\n\n";
+                String shareMessage= "\n Let me recommend you this application \n\n";
                 shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
                 startActivity(Intent.createChooser(shareIntent, "choose one"));
         } catch(Exception e) {
@@ -112,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
             case R.id.feedback:
-                Toast.makeText(this, "give feed back", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Give Feedback", Toast.LENGTH_SHORT).show();
                 return true;
 
 
@@ -131,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.hide_icon:
-                Toast.makeText(this, "hide application", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Hide Application", Toast.LENGTH_SHORT).show();
                 return true;
 
 

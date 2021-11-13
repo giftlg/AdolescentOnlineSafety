@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
@@ -10,67 +9,62 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="283dp"
-            android:orientation="vertical">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/emailError"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
-                <EditText
-                    android:id="@+id/Email_Edit_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/text_area"
-                    android:hint="@string/Receivers_email"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:singleLine="true"
-                    tools:ignore="SpeakableTextPresentCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <Button
-                android:id="@+id/Register_btn"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_margin="20dp"
-                android:background="@drawable/text_area"
-                android:backgroundTint="#A1DCE3"
-                android:fadingEdge="horizontal|vertical"
-                android:text="@string/Register_Email"
-                android:textSize="16sp" />
-
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/inside_relative_layout"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailError"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="688dp">
 
-        `
-    </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    `
+    <Button
+        android:id="@+id/Register_btn"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="399dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dialog_shape"
+        android:backgroundTint="#FF9800"
+        android:fadingEdge="horizontal|vertical"
+        android:letterSpacing="0.2"
+        android:rotationY="2"
+        android:text="@string/Register_Email"
+        android:textAppearance=""
+        android:textColor="#F6F6F6"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#FF9800"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        android:visibility="visible"
+        app:rippleColor="#FFC107"
+        tools:ignore="TextContrastCheck" />
 
+    <EditText
+        android:id="@+id/Email_Edit_text"
+        android:layout_width="372dp"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="341dp"
+        android:background="@drawable/text_area"
+        android:hint="@string/Receivers_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAlignment="center"
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
 
 </RelativeLayout>

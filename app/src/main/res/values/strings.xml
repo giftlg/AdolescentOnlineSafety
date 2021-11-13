@@ -1,16 +1,15 @@
 <resources>
     <string name="app_name">Adolescent Online Safety</string>
 
-    <string name="Register_Email">Enter your Email Address</string>
-    <string name="Receivers_email">Enter your Gmail account</string>
+    <string name="Register_Email">ENTER</string>
+    <string name="Receivers_email">Enter your Gmail Address</string>
 
     <string name="remember_me">Remember Email</string>
     <string name="developer_names">Gift sankhulani &amp; Omwaako Tukula </string>
-    <string name="developer_heading">DEVELOPERS </string>
+    <string name="developer_heading">Developers </string>
 
 
-    <string name="app_info"> Adolescent online app is a monitoring application which is installed on the childs device this application will run
-        a services in the background this service will monitor all the activities on the childs phone
+    <string name="app_info"> Adolescent Online Safety app is a monitoring application which is installed on an adolescent child\'s device and it will run services in the background that will monitor all the activities on the child\'s phone
 
 
 
