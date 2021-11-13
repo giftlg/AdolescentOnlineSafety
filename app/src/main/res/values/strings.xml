@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Adolescent Online Safety</string>
+
+    <string name="Register_Email">Register</string>
+    <string name="Receivers_email">Enter your Gmail account</string>
+
+    <string name="remember_me">Remember Email</string>
+    <string name="developer_names">Gift sankhulani &amp; Omwaako Tukula </string>
+    <string name="developer_heading">DEVELOPERS </string>
+
+    <string name="app_info"> Adolescent online app is a monitoring application which is installed on the childs device this application will run
+        a services in the background this service will monitor all the activities on the childs phone
+
+
+
+    </string>
+    <string name="title_activity_logged_in">LoggedInActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+
+</resources>

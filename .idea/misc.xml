@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/dialog_about_shape.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/dialog_shape.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/gradient.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/ic_close_24.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/ic_share_24.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/login_btn.xml" value="0.175" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/login_register_btn.xml" value="0.175" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/round_background.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/text_area.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/activity_logged_in.xml" value="0.16" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/activity_main2.xml" value="0.22" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/dialog_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/fragment_first.xml" value="0.12222222222222222" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/menu/main_menu.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.18" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
