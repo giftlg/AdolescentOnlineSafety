@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         return true;
-            case R.id.feed_back:
+            case R.id.feedback:
                 Toast.makeText(this, "give feed back", Toast.LENGTH_SHORT).show();
                 return true;
 
