@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable/text_area.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_logged_in.xml" value="0.25" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/dialog_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/menu/main_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/dialog_about_shape.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/dialog_shape.xml" value="0.20052083333333334" />
