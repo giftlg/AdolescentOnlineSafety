@@ -9,15 +9,6 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailError"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="688dp">
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/Register_btn"
@@ -29,26 +20,24 @@
         android:layout_marginTop="399dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/dialog_shape"
-        android:backgroundTint="#FF9800"
+        android:backgroundTint="#00B0FF"
         android:fadingEdge="horizontal|vertical"
         android:letterSpacing="0.2"
-        android:rotationY="2"
         android:text="@string/Register_Email"
-        android:textAppearance=""
+
+
         android:textColor="#F6F6F6"
         android:textColorHighlight="#000000"
         android:textColorLink="#FF9800"
         android:textSize="16sp"
         android:textStyle="normal|bold"
-        android:visibility="visible"
         app:rippleColor="#FFC107"
         tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/Email_Edit_text"
-        android:layout_width="372dp"
-        android:layout_height="73dp"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="false"
@@ -64,7 +53,6 @@
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:singleLine="true"
-        android:textAlignment="center"
-        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+        android:textAlignment="center" />
 
 </RelativeLayout>

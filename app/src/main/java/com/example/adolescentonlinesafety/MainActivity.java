@@ -52,13 +52,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-//action to be perfomed when register button is clicked
+//action to be performed when register button is clicked
 
     register_btn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v)
         {
             String reg_email = email_edit_text.getText().toString();
+            //writing info to paper
       Paper.book().write(Configuration.FirstEmailKey,reg_email);
   //check if email is entered
       if (TextUtils.isEmpty(reg_email))
