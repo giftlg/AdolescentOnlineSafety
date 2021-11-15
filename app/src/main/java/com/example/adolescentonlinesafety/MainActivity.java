@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
               Toast.makeText(MainActivity.this, "Email "+reg_email+" registered", Toast.LENGTH_SHORT).show();
               Intent intent = new Intent(MainActivity.this,LoggedInActivity.class);
               startActivity(intent);
+
           }
 
         }
