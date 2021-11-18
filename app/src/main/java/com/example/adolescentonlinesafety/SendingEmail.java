@@ -1,15 +1,15 @@
 package com.example.adolescentonlinesafety;
 
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Session;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+
 import java.util.Properties;
 
+import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;

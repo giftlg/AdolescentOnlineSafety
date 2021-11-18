@@ -66,7 +66,15 @@ public class MainActivity extends AppCompatActivity {
       {
           Toast.makeText(MainActivity.this,"Email is empty",Toast.LENGTH_LONG).show();
 
+
       }
+      // checking if email is valid
+      else if (! reg_email.contains("@gmail.com"))
+               {
+          Toast.makeText(MainActivity.this,"Invalid Gmail Address",Toast.LENGTH_LONG).show();
+
+              }
+
       else
           {
               Toast.makeText(MainActivity.this, "Email "+reg_email+" registered", Toast.LENGTH_SHORT).show();
