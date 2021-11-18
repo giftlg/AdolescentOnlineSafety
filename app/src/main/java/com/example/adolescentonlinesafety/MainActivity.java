@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressDialog loadingbar;
     public static String email_name;
     public TextView testing;
-    private CheckBox chckbx_rememberMe;
+    private CheckBox checkbox_rememberMe;
 
 
 
@@ -41,9 +41,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        register_btn=  findViewById(R.id.Register_btn);
+        register_btn =  findViewById(R.id.Register_btn);
         email_edit_text =  findViewById(R.id.Email_Edit_text);
         loadingbar= new ProgressDialog(this);
+        checkbox_rememberMe = findViewById(R.id.checkBox);
 
         Paper.init(this);
 
@@ -66,7 +67,15 @@ public class MainActivity extends AppCompatActivity {
       {
           Toast.makeText(MainActivity.this,"Email is empty",Toast.LENGTH_LONG).show();
 
+
       }
+      // checking if email is valid
+      else if (! reg_email.contains("@gmail.com"))
+               {
+          Toast.makeText(MainActivity.this,"Invalid Gmail Address",Toast.LENGTH_LONG).show();
+
+              }
+
       else
           {
               Toast.makeText(MainActivity.this, "Email "+reg_email+" registered", Toast.LENGTH_SHORT).show();

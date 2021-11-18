@@ -55,7 +55,7 @@
         android:maxLines="1"
         android:singleLine="true"
         android:textAlignment="center"
-        android:textColorHint="grey" />
+         />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -70,7 +70,7 @@
         android:clickable="true"
         android:focusable="true"
         android:minHeight="48dp"
-        android:text="@string/remember_me2"
+        android:text="remember"
         android:textColor="#FFFFFF" />
 
 </RelativeLayout>
