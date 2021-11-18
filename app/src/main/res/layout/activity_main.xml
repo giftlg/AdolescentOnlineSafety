@@ -12,15 +12,15 @@
 
     <Button
         android:id="@+id/Register_btn"
-        android:layout_width="151dp"
-        android:layout_height="wrap_content"
+        android:layout_width="149dp"
+        android:layout_height="64dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="399dp"
+        android:layout_marginTop="435dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="#00B0FF"
+        android:backgroundTint="#FF9800"
         android:fadingEdge="horizontal|vertical"
         android:letterSpacing="0.2"
         android:text="@string/Register_Email"
@@ -31,6 +31,7 @@
         android:textColorLink="#FF9800"
         android:textSize="16sp"
         android:textStyle="normal|bold"
+        app:cornerRadius="1002dp"
         app:rippleColor="#FFC107"
         tools:ignore="TextContrastCheck" />
 
@@ -53,6 +54,23 @@
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:singleLine="true"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColorHint="grey" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="373dp"
+        android:layout_marginEnd="205dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:text="@string/remember_me2"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
