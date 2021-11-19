@@ -61,7 +61,11 @@ public class MainActivity extends AppCompatActivity {
         {
             String reg_email = email_edit_text.getText().toString();
             //writing info to paper
-      Paper.book().write(Configuration.FirstEmailKey,reg_email);
+            if (checkbox_rememberMe.isChecked()) {
+                Paper.book().write(Configuration.FirstEmailKey, reg_email);
+
+
+            }
   //check if email is entered
       if (TextUtils.isEmpty(reg_email))
       {

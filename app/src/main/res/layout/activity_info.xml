@@ -8,19 +8,6 @@
     tools:layout_editor_absoluteY="81dp">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="358dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="19dp"
-        android:alpha="0.3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sos1" />
 
 
     <ScrollView
@@ -45,7 +32,7 @@
             android:text="@string/info"
             android:textAlignment="viewStart"
             android:textSize="18sp"
-            android:textColor="@color/black"
+            android:textColor="#404243"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.636"
