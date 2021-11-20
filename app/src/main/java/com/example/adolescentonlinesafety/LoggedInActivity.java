@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 
 import com.google.android.gms.common.api.ResolvableApiException;
 import com.google.android.gms.location.LocationRequest;
@@ -42,11 +43,26 @@ public class LoggedInActivity extends AppCompatActivity {
     private int emgContacts = 0;
 
     SharedPreferences sh;
+    ImageButton instruction,edit_message,add_contact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logged_in);
+        instruction = findViewById(R.id.cardView_instruction);
+        edit_message = findViewById(R.id.edit_message);
+        add_contact = findViewById(R.id.add_contacts);
+
+        edit_message.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(LoggedInActivity.this,SettingsActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
 
         sh = getSharedPreferences(PREF_FILE_NAME, MODE_PRIVATE);
 
@@ -84,34 +100,6 @@ public class LoggedInActivity extends AppCompatActivity {
 
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.option_menu, menu);
-        return true;
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-
-            case R.id.emg_ph_menu:
-                Intent i1 = new Intent(this,ContactActivity.class);
-                startActivity(i1);
-                break;
-
-            case R.id.msg_menu:
-                Intent i= new Intent(this, SettingsActivity.class);
-                startActivity(i);
-                break;
-
-            case R.id.about_menu:
-                Intent i2 = new Intent(this, Infor.class);
-                startActivity(i2);
-        }
-
-        return true;
-    }
 
 
     private void checkGPS() {
@@ -249,4 +237,5 @@ public class LoggedInActivity extends AppCompatActivity {
 
 
     }
+
 }
