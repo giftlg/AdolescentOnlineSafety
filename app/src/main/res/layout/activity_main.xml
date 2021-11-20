@@ -35,6 +35,31 @@
         app:rippleColor="#FFC107"
         tools:ignore="TextContrastCheck" />
 
+    <Button
+        android:id="@+id/Create_account"
+        android:layout_width="149dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="567dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF9800"
+        android:fadingEdge="horizontal|vertical"
+        android:letterSpacing="0.3"
+        android:text="Create account"
+
+
+        android:textColor="#F6F6F6"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#FF9800"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        app:cornerRadius="1002dp"
+        app:rippleColor="#FFC107"
+        tools:ignore="TextContrastCheck" />
+
     <EditText
         android:id="@+id/Email_Edit_text"
         android:layout_width="332dp"

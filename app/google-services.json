@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "934331150849",
+    "project_id": "aos-5a74f",
+    "storage_bucket": "aos-5a74f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934331150849:android:170985fd74f52d01ba8600",
+        "android_client_info": {
+          "package_name": "com.example.adolescentonlinesafety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934331150849-r4n6esscbtg5vg3i6pvb264n4toblnop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjuF4RblCrr9tRwm8ACeY2ljjprcHw_CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934331150849-r4n6esscbtg5vg3i6pvb264n4toblnop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

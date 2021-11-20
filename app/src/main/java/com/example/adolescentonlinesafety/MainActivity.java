@@ -25,7 +25,7 @@ import io.paperdb.Paper;
 public class MainActivity extends AppCompatActivity {
 
 
-   public Button register_btn;
+   public Button register_btn,create_account;
     public static EditText email_edit_text;
     private ProgressDialog loadingbar;
     public static String email_name;
@@ -45,13 +45,21 @@ public class MainActivity extends AppCompatActivity {
         email_edit_text =  findViewById(R.id.Email_Edit_text);
         loadingbar= new ProgressDialog(this);
         checkbox_rememberMe = findViewById(R.id.checkBox);
-
+        create_account = findViewById(R.id.Create_account);
         Paper.init(this);
 
 
 
 
+      create_account.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view)
+          {
+              Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
+              startActivity(intent);
 
+          }
+      });
 
 //action to be performed when register button is clicked
 
