@@ -22,6 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdolescentOnlineSafety">
         <activity
+            android:name=".MainActivity1"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity

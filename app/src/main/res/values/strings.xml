@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Adolescent Online Safety</string>
 
-    <string name="Register_Email">ENTER</string>
+    <string name="Register_Email">Login</string>
     <string name="Receivers_email">Enter your Gmail Address</string>
 
     <string name="remember_me">Remember Email</string>

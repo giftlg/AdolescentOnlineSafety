@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.google.android.gms.common.api.ResolvableApiException;
@@ -43,13 +44,13 @@ public class LoggedInActivity extends AppCompatActivity {
     private int emgContacts = 0;
 
     SharedPreferences sh;
-    ImageButton instruction,edit_message,add_contact;
+    Button instruction,edit_message,add_contact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logged_in);
-        instruction = findViewById(R.id.cardView_instruction);
+        instruction = findViewById(R.id.instructions);
         edit_message = findViewById(R.id.edit_message);
         add_contact = findViewById(R.id.add_contacts);
 
@@ -60,6 +61,26 @@ public class LoggedInActivity extends AppCompatActivity {
                 Intent intent = new Intent(LoggedInActivity.this,SettingsActivity.class);
                 startActivity(intent);
 
+
+            }
+        });
+
+        add_contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(LoggedInActivity.this,ContactActivity.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        instruction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoggedInActivity.this,Infor.class);
+                startActivity(intent);
 
             }
         });
