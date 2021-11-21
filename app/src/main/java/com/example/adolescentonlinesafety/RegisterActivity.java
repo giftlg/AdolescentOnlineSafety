@@ -22,6 +22,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 
+import io.paperdb.Paper;
+
 public class RegisterActivity extends AppCompatActivity {
 
     Button reg_btn;
@@ -42,6 +44,9 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Configuration.FirstEmailKey = reg_email.getText().toString();
+
+
                 CreatAccount();
 
             }
@@ -55,6 +60,9 @@ public class RegisterActivity extends AppCompatActivity {
     private void CreatAccount() {
         String email = reg_email.getText().toString().replace(".",",");
         String password = reg_password.getText().toString();
+
+        Configuration.FirstEmailKey = reg_email.getText().toString();
+
 
 
 

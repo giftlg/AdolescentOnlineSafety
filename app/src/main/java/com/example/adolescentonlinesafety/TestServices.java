@@ -8,6 +8,8 @@ import android.net.NetworkInfo;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 
+import com.example.adolescentonlinesafety.prevalent.Prevalent;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -104,11 +106,11 @@ public class TestServices extends AccessibilityService {
 
                                         // getting user registered email from paper
                                         Paper.init(this);
-                                        String finall_email = Paper.book().read(Configuration.FirstEmailKey);
+                                        String finall_email = Paper.book().read(Prevalent.UserEmailKey.replace(',','.'));
 
                                      // SendingEmail sm = new SendingEmail(this,"timosankhulani@gmail.com","Activity Data",text.toString()); //Change XXXX by email adress where to send
-                                        SendingEmail sm = new SendingEmail(this,""+finall_email,
-                                                "info",
+                                        SendingEmail sm = new SendingEmail(this,""+finall_email.replace(',','.'),
+                                                "Activity Report",
                                                 text.toString());
 
 
