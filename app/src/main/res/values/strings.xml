@@ -48,7 +48,7 @@
 </string>
     <string name="title_activity_contact">ContactActivity</string>
     <string name="todo">TODO</string>
-    <string name="about_app">ABOUT APP</string>
+    <string name="about_app">About App</string>
 
 
 </resources>

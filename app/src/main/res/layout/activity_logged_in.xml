@@ -5,33 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/my_layout"
-    android:background="@drawable/logged_in_background"
+    android:background="@drawable/logged_in_backgrounds"
     tools:context=".LoggedInActivity">
 
-
-    <Button
-        android:id="@+id/add_contacts"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="156dp"
-        android:fadingEdge="horizontal|vertical"
-        android:letterSpacing="0.3"
-
-        android:backgroundTint="#03A9F4"
-        android:text="Add contacts"
-        android:textColor="#F6F6F6"
-        android:textColorHighlight="#000000"
-        android:textColorLink="#FF9800"
-        android:textSize="16sp"
-        android:textStyle="normal|bold"
-        app:cornerRadius="1002dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#FFC107"
-        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/edit_message"
@@ -57,15 +33,39 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
+        android:id="@+id/add_contacts"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp"
+        android:backgroundTint="#03A9F4"
+        android:fadingEdge="horizontal|vertical"
+
+        android:letterSpacing="0.3"
+        android:text="Add contacts"
+        android:textColor="#F6F6F6"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#FF9800"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        app:cornerRadius="1002dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#FFC107"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
         android:id="@+id/instructions"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:fadingEdge="horizontal|vertical"
-        android:letterSpacing="0.3"
-
         android:backgroundTint="#03A9F4"
+        android:fadingEdge="horizontal|vertical"
+
+        android:letterSpacing="0.3"
         android:text="How to use"
         android:textColor="#F6F6F6"
         android:textColorHighlight="#000000"
@@ -76,27 +76,27 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_contacts"
-        android:
         tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/my_fab"
         android:layout_width="181dp"
         android:layout_height="181dp"
-        app:fabCustomSize="181dp"
         android:layout_gravity="end"
-        android:layout_marginBottom="116dp"
-        app:backgroundTint="#FF9800"
+        android:layout_marginBottom="84dp"
+        android:focusable="true"
         android:scaleType="center"
-        android:src="@drawable/aos_logo_white"
-        app:elevation="1dp"
+        android:src="@drawable/O_white"
+        app:backgroundTint="#FF9800"
         app:borderWidth="0dp"
-        app:pressedTranslationZ="1dp"
+        app:elevation="1dp"
+        app:fabCustomSize="181dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:maxImageSize="100dp"
-        android:focusable="true" />
+        app:pressedTranslationZ="1dp"
+        app:tint="@color/fab_background" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
