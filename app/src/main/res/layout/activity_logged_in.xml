@@ -9,34 +9,17 @@
     tools:context=".LoggedInActivity">
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/my_fab"
-        android:layout_width="106dp"
-        android:layout_height="102dp"
-        android:layout_marginBottom="90dp"
-        android:alpha="1"
-        android:background="@drawable/sos"
-        android:clickable="true"
-        app:elevation="15dp"
-        app:fabSize="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328" />
-
     <Button
         android:id="@+id/add_contacts"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="#FF9800"
+        android:layout_marginTop="156dp"
         android:fadingEdge="horizontal|vertical"
         android:letterSpacing="0.3"
+
+        android:backgroundTint="#03A9F4"
         android:text="Add contacts"
-
-
         android:textColor="#F6F6F6"
         android:textColorHighlight="#000000"
         android:textColorLink="#FF9800"
@@ -44,31 +27,9 @@
         android:textStyle="normal|bold"
         app:cornerRadius="1002dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_fab"
-        app:rippleColor="#FFC107"
-        tools:ignore="TextContrastCheck" />
-
-    <Button
-        android:id="@+id/instructions"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="#FF9800"
-        android:fadingEdge="horizontal|vertical"
-        android:letterSpacing="0.3"
-        android:text="How to use"
-
-
-        android:textColor="#F6F6F6"
-        android:textColorHighlight="#000000"
-        android:textColorLink="#FF9800"
-        android:textSize="16sp"
-        android:textStyle="normal|bold"
-        app:cornerRadius="1002dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_contacts"
+        app:layout_constraintTop_toTopOf="parent"
         app:rippleColor="#FFC107"
         tools:ignore="TextContrastCheck" />
 
@@ -77,12 +38,11 @@
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="#FF9800"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#03A9F4"
         android:fadingEdge="horizontal|vertical"
         android:letterSpacing="0.3"
         android:text="Edit sos message"
-
-
         android:textColor="#F6F6F6"
         android:textColorHighlight="#000000"
         android:textColorLink="#FF9800"
@@ -90,12 +50,53 @@
         android:textStyle="normal|bold"
         app:cornerRadius="1002dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/instructions"
         app:rippleColor="#FFC107"
         tools:ignore="TextContrastCheck" />
 
+    <Button
+        android:id="@+id/instructions"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:fadingEdge="horizontal|vertical"
+        android:letterSpacing="0.3"
 
+        android:backgroundTint="#03A9F4"
+        android:text="How to use"
+        android:textColor="#F6F6F6"
+        android:textColorHighlight="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        app:cornerRadius="1002dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_contacts"
+        android:
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/my_fab"
+        android:layout_width="181dp"
+        android:layout_height="181dp"
+        app:fabCustomSize="181dp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="116dp"
+        app:backgroundTint="#FF9800"
+        android:scaleType="center"
+        android:src="@drawable/aos_logo_white"
+        app:elevation="1dp"
+        app:borderWidth="0dp"
+        app:pressedTranslationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="100dp"
+        android:focusable="true" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

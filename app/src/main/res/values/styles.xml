@@ -9,4 +9,9 @@
         <item name="android:background">?android:attr/colorBackground</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
+    <style name="MyFabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/fab_background</item>
+        <item name="tint">@color/white</item>
+        <item name="rippleColor">#0d9bed</item>
+    </style>
 </resources>

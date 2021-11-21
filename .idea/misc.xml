@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable/text_area.xml" value="0.19907407407407407" />
-        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_logged_in.xml" value="0.25" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_info.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_infor.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_logged_in.xml" value="0.18" />
         <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/dialog_layout.xml" value="0.33" />
         <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/menu/main_menu.xml" value="0.22447916666666667" />
