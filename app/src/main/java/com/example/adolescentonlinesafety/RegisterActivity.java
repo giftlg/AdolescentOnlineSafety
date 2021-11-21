@@ -57,6 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
         String password = reg_password.getText().toString();
 
 
+
         if (TextUtils.isEmpty(email))
         {
             //function
