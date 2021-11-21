@@ -89,6 +89,74 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        String UserEmailKey = Paper.book().read(Prevalent.UserEmailKey);
+        String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
+
+        if (UserEmailKey !="" && UserPasswordKey !="")
+        {
+            if (!TextUtils.isEmpty(UserEmailKey) &&  !TextUtils.isEmpty(UserPasswordKey))
+            {
+                AlloweAccess(UserEmailKey,UserPasswordKey);
+
+                loadinbar.setTitle("");
+                loadinbar.setMessage("Please wait....");
+                loadinbar.setCanceledOnTouchOutside(false);
+                loadinbar.show();
+
+            }
+        }
+
+
+
+
+
+
+    }
+
+    private void AlloweAccess(final String login_email, final String login_password)
+
+    {
+        final DatabaseReference RootRef;
+        RootRef = FirebaseDatabase.getInstance().getReference();
+
+        RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.child("Users").child(login_email).exists()) {
+                    Users usersData = snapshot.child("Users").child(login_email).getValue(Users.class);
+                    if (usersData.getEmail().equals(login_email)) {
+                        if (usersData.getPassword().equals(login_password)) {
+                            Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                            loadinbar.dismiss();
+                            Intent intent = new Intent(MainActivity.this, LoggedInActivity.class);
+                            startActivity(intent);
+
+
+                        } else {
+                            Toast.makeText(MainActivity.this, "Incorrect password", Toast.LENGTH_SHORT).show();
+                            loadinbar.dismiss();
+                        }
+
+
+                    }
+
+
+                } else {
+                    Toast.makeText(MainActivity.this, "No account registered", Toast.LENGTH_SHORT).show();
+                    loadinbar.dismiss();
+
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
 
 
     }
@@ -189,72 +257,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-        String UserEmailKey = Paper.book().read(Prevalent.UserEmailKey);
-        String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
-
-        if (UserEmailKey !="" && UserPasswordKey !="")
-        {
-            if (!TextUtils.isEmpty(UserEmailKey) &&  !TextUtils.isEmpty(UserPasswordKey))
-            {
-                AlloweAccess(UserEmailKey,UserPasswordKey);
-
-                loadinbar.setTitle("");
-                loadinbar.setMessage("Please wait....");
-                loadinbar.setCanceledOnTouchOutside(false);
-                loadinbar.show();
-
-            }
-        }
-
-
-
-
-
-
-    }
-
-    private void AlloweAccess(final String login_email, final String login_password)
-
-        {
-            final DatabaseReference RootRef;
-            RootRef = FirebaseDatabase.getInstance().getReference();
-
-            RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    if (snapshot.child("Users").child(login_email).exists()) {
-                        Users usersData = snapshot.child("Users").child(login_email).getValue(Users.class);
-                        if (usersData.getEmail().equals(login_email)) {
-                            if (usersData.getPassword().equals(login_password)) {
-                                Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                                loadinbar.dismiss();
-                                Intent intent = new Intent(MainActivity.this, LoggedInActivity.class);
-                                startActivity(intent);
-
-
-                            } else {
-                                Toast.makeText(MainActivity.this, "Incorrect password", Toast.LENGTH_SHORT).show();
-                                loadinbar.dismiss();
-                            }
-
-
-                        }
-
-
-                    } else {
-                        Toast.makeText(MainActivity.this, "No account registered", Toast.LENGTH_SHORT).show();
-                        loadinbar.dismiss();
-
-                    }
-
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
-                }
-            });
 
 
 
