@@ -9,9 +9,13 @@
         <item name="android:background">?android:attr/colorBackground</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
-    <style name="MyFabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
-        <item name="backgroundTint">@color/fab_background</item>
-        <item name="tint">@color/white</item>
-        <item name="rippleColor">#0d9bed</item>
+    <style name="app_theme" parent="android:Theme">
+        <item name="android:windowBackground">@drawable/login_background</item>
+        <item name="android:listViewStyle">@style/TransparentListView</item>
+        <item name="android:expandableListViewStyle">@style/TransparentExpandableListView</item>
     </style>
+
+    <style name="TransparentListView">TransparentListView</style>
+
+    <style name="TransparentExpandableListView"></style>
 </resources>

@@ -5,6 +5,7 @@
     android:id="@+id/my_constLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/logged_in_background"
     tools:context=".ContactActivity"
     tools:layout_editor_absoluteY="81dp">
 
@@ -16,8 +17,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:paddingStart="8dp"
-        android:text="long tap contact to delete"
+        android:text="Long Press Contact to Delete"
         android:textColor="@color/black"
+        android:fontFamily="@font/gotham_book"
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,19 +28,25 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
         android:clickable="true"
-        app:backgroundTint="@color/black"
+        android:foregroundTint="@color/white"
+        android:foregroundTintMode="add"
+        app:backgroundTint="#FF9800"
         app:elevation="15dp"
+        app:fabCustomSize="97dp"
+        android:tint="@color/white"
         app:fabSize="normal"
+        app:fab_iconSize="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.94"
         app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="40dp"
         app:srcCompat="@drawable/ic_add_black_24dp" />
 
     <ImageView

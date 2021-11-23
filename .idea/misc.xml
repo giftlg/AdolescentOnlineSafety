@@ -3,11 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable-hdpi/ic_add_black_24dp.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable-v21/app_widget_background.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable-v21/app_widget_inner_view_background.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable/dialog_about_shape.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable/dialog_shape.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable/gradient.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19743589743589743" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable/round_background.xml" value="0.13518518518518519" />
         <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/drawable/text_area.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_contact.xml" value="0.2" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_info.xml" value="0.18" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_infor.xml" value="0.15989583333333332" />
         <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_logged_in.xml" value="0.25" />
-        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_lounch.xml" value="0.15989583333333332" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/content_contact.xml" value="0.15989583333333332" />
         <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/dialog_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/fragment_first.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/fragment_second.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/layout.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/layout/my_app_widget.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/menu/main_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Badmac/AndroidStudioProjects/AdolescentOnlineSafety/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13518518518518519" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/dialog_about_shape.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/drawable/dialog_shape.xml" value="0.20052083333333334" />
@@ -28,12 +48,11 @@
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/activity_main1.xml" value="0.1859375" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/activity_main2.xml" value="0.22" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/activity_register.xml" value="0.25" />
-        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/content_contact.xml" value="0.184375" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/dialog_layout.xml" value="0.25" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/fragment_first.xml" value="0.12222222222222222" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/fragment_second.xml" value="0.2" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/git.xml" value="0.1203125" />
-        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/my_app_widget.xml" value="0.16" />
+        <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/layout/my_app_widget.xml" value="0.1" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/menu/loggeinmenu.xml" value="0.2" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/menu/main_menu.xml" value="0.25" />
         <entry key="..\:/Users/Gifts/AndroidStudioProjects/Final Year Project/AdolescentOnlineSafety2/app/src/main/res/menu/menu_context.xml" value="0.16822916666666668" />
@@ -53,7 +72,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.16197916666666667" />
+        <option name="scale" value="0.2" />
       </ProjectState>
     </option>
   </component>
