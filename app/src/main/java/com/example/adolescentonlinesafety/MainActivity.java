@@ -32,14 +32,13 @@ import io.paperdb.Paper;
 public class MainActivity extends AppCompatActivity {
 
 
-    public Button login_btn;
-    public TextView create_account;
-    public  EditText input_email,input_password;
+   public Button login_btn,create_account;
+    public static EditText input_email,input_password;
     private ProgressDialog loadingbar;
     public static String email_name;
     private CheckBox checkbox_rememberMe;
     private ProgressDialog loadinbar;
-    private final String parentDbName = "Users";
+    private String parentDbName = "Users";
 
 
 
@@ -48,20 +47,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        try {
-            this.getSupportActionBar().hide();
-        }
-        catch (NullPointerException e){}
         setContentView(R.layout.activity_main);
 
         login_btn =  findViewById(R.id.Login_btn);
         input_email =  findViewById(R.id.login_email);
         input_password = findViewById(R.id.login_password);
         loadingbar= new ProgressDialog(this);
-        checkbox_rememberMe = findViewById(R.id.checkBox);
-        create_account = findViewById(R.id.create_account);
+        create_account = findViewById(R.id.Create_account);
         loadinbar=new ProgressDialog(this);
-        checkbox_rememberMe = findViewById(R.id.checkBox);
         Paper.init(this);
 
 
@@ -92,6 +85,74 @@ public class MainActivity extends AppCompatActivity {
                 LoginUser();
             }
         });
+
+
+        String UserEmailKey = Paper.book().read(Prevalent.UserEmailKey);
+        String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
+
+        if (UserEmailKey !="" && UserPasswordKey !="")
+        {
+            if (!TextUtils.isEmpty(UserEmailKey) &&  !TextUtils.isEmpty(UserPasswordKey))
+            {
+                AlloweAccess(UserEmailKey,UserPasswordKey);
+
+                loadinbar.setTitle("");
+                loadinbar.setMessage("Please wait....");
+                loadinbar.setCanceledOnTouchOutside(false);
+                loadinbar.show();
+
+            }
+        }
+
+
+
+
+
+
+    }
+
+    private void AlloweAccess(final String login_email, final String login_password)
+
+    {
+        final DatabaseReference RootRef;
+        RootRef = FirebaseDatabase.getInstance().getReference();
+
+        RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.child("Users").child(login_email).exists()) {
+                    Users usersData = snapshot.child("Users").child(login_email).getValue(Users.class);
+                    if (usersData.getEmail().equals(login_email)) {
+                        if (usersData.getPassword().equals(login_password)) {
+                            Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                            loadinbar.dismiss();
+                            Intent intent = new Intent(MainActivity.this, LoggedInActivity.class);
+                            startActivity(intent);
+
+
+                        } else {
+                            Toast.makeText(MainActivity.this, "Incorrect password", Toast.LENGTH_SHORT).show();
+                            loadinbar.dismiss();
+                        }
+
+
+                    }
+
+
+                } else {
+                    Toast.makeText(MainActivity.this, "No account registered", Toast.LENGTH_SHORT).show();
+                    loadinbar.dismiss();
+
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
 
 
 
@@ -194,72 +255,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-        String UserEmailKey = Paper.book().read(Prevalent.UserEmailKey);
-        String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
-
-        if (UserEmailKey !="" && UserPasswordKey !="")
-        {
-            if (!TextUtils.isEmpty(UserEmailKey) &&  !TextUtils.isEmpty(UserPasswordKey))
-            {
-                AlloweAccess(UserEmailKey,UserPasswordKey);
-
-                loadinbar.setTitle("");
-                loadinbar.setMessage("Please wait....");
-                loadinbar.setCanceledOnTouchOutside(false);
-                loadinbar.show();
-
-            }
-        }
-
-
-
-
-
-
-    }
-
-    private void AlloweAccess(final String login_email, final String login_password)
-
-        {
-            final DatabaseReference RootRef;
-            RootRef = FirebaseDatabase.getInstance().getReference();
-
-            RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    if (snapshot.child("Users").child(login_email).exists()) {
-                        Users usersData = snapshot.child("Users").child(login_email).getValue(Users.class);
-                        if (usersData.getEmail().equals(login_email)) {
-                            if (usersData.getPassword().equals(login_password)) {
-                                Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                                loadinbar.dismiss();
-                                Intent intent = new Intent(MainActivity.this, LoggedInActivity.class);
-                                startActivity(intent);
-
-
-                            } else {
-                                Toast.makeText(MainActivity.this, "Incorrect password", Toast.LENGTH_SHORT).show();
-                                loadinbar.dismiss();
-                            }
-
-
-                        }
-
-
-                    } else {
-                        Toast.makeText(MainActivity.this, "No account registered", Toast.LENGTH_SHORT).show();
-                        loadinbar.dismiss();
-
-                    }
-
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
-                }
-            });
 
 
 

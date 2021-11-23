@@ -58,8 +58,8 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void CreatAccount() {
-        String email = reg_email.getText().toString().replace(".",",");
-        String password = reg_password.getText().toString();
+        String email = reg_email.getText().toString().replace(".",","); //replacing character (.) to (,) because it is not allowed in firebase realtime database
+        String password = reg_password.getText().toString().replace('a','x'); // coveting character for security reason in database
 
         Configuration.FirstEmailKey = reg_email.getText().toString();
 
