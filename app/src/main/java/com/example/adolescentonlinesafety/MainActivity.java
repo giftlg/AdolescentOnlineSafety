@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         input_password = findViewById(R.id.login_password);
         loadingbar= new ProgressDialog(this);
 
-        create_account = findViewById(R.id.Create_account);
+        create_account = findViewById(R.id.create_account);
         loadinbar=new ProgressDialog(this);
 
         Paper.init(this);

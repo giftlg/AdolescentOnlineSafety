@@ -8,15 +8,6 @@
     android:background="@drawable/login_background"
     android:padding="16dp">
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/edit_email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/aos_logo"/>
-
 
     <ImageView
         android:id="@+id/imageView4"
