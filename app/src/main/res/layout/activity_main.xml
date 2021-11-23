@@ -19,7 +19,7 @@
         android:fadingEdge="horizontal|vertical"
         android:letterSpacing="0.3"
         android:text="@string/Register_Email"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
 
 
         android:textColor="#F6F6F6"
@@ -30,7 +30,7 @@
         app:cornerRadius="1002dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password"
         app:rippleColor="#FFC107"
         tools:ignore="TextContrastCheck" />
 
@@ -57,42 +57,68 @@
         app:rippleColor="#FFC107"
         tools:ignore="TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/login_email"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentBottom="false"
-        android:layout_centerInParent="true"
-        android:background="@drawable/text_area"
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_email_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="@string/Receivers_email"
-        android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
-        android:maxLines="1"
-        android:singleLine="true"
         android:textAlignment="center"
+        android:textColorHint="#878787"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="280dp"/>
+        app:layout_constraintVertical_bias="0.442">
 
-    <EditText
-        android:id="@+id/login_password"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="none"
+            android:background="@drawable/text_area"
+            android:drawingCacheQuality="auto"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:textColorHint="#878787"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="310dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/text_area"
-        android:hint="password"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_email" />
+        app:hintTextColor="#404040"
+        app:layout_constraintTop_toBottomOf="@+id/login_email_layout"
+        app:passwordToggleEnabled="true"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_area"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColorHint="#878787"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="420dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
 
 
 
